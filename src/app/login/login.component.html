@@ -1,1 +1,21 @@
-<p>login works!</p>
+<div class="login-container">
+    <img src="../../assets/images/movie1.jpg" class="movie-image" alt="">
+    <div class="logo">Filimo</div>
+    <div class="description">
+        One of the most popular and well-known streaming services in the world.
+    </div>
+    <div class="login-form">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" name="username" class="form-control" [(ngModel)]="username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="text" name="password" class="form-control" [(ngModel)]="password">
+        </div>
+        <div class="btn-container">
+            <div class="error">{{errorMes}}</div>
+            <button class="btn btn-dark" (click)="login()">Login</button>
+        </div>
+    </div>
+</div>
